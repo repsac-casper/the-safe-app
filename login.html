@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grouppay - Login</title>
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="images/logo_white.png"
+    media="(prefers-color-scheme: dark)">
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="images/logo_black.png"
+    media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="styles-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script type="module" src="login.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" id="signInForm">
+            <h1>Login</h1>
+            <div class="input_box">
+                <input type="text" placeholder="E-mail" required id="email">
+                <img src="images/icon/mail.svg" alt="">
+            </div>
+            <div class="input_box">
+                <input type="password" placeholder="Wachtwoord" required id="password">
+                <img src="images/icon/lock.svg" alt="">
+            </div>
+
+            <div class="remember_forgot">
+                <button id="vergeten">Wachtwoord vergeten?</button>
+            </div>
+
+            <button type="submit" class="btn" id="submit">Login</button>
+
+            <div class="register-link">
+                <p>Nog geen account? <a href="register.html">Registreer</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-background: #11271C;
+    --main-text: #F9F9F9;
+    --second-text: #CCDBDC;
+    --third-text: #2a5540;
+    --main-btn: #69365D;
+    --main-hover: #06889a;
+}
+
+body {
+    background-color: var(--main-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*navbar section*/
+.navbar {
+    background-color: #0b0f38;
+    background-image: linear-gradient(to bottom, #69365D 0%, #11271C 90%);
+    height: 80px;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_container img {
+    height: 40px;
+    filter: invert();
+    margin: 20px 20px 0 0;
+}
+
+.navbar_container h1 {
+    color: var(--main-text);
+    font-size: 30px;
+    margin: 18px 0 0 20px;
+}
+
+/*first section*/
+.first_container {
+    margin: 20px 20px 0px 20px;
+}
+
+.first_container h1 {
+    color: var(--main-text);
+    background-image: linear-gradient(to left, #06889a 0%, #69365D 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 55px;
+}
+
+.first_container h3 {
+    color: var(--third-text);
+    font-size: 35px;
+}
+
+/*second section*/
+.second_content {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 20px 0px 20px;
+}
+
+.second_content img {
+    height: 45px;
+    background-color: var(--main-btn);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.second_content h2 {
+    color: var(--main-text);
+    font-size: 30px;
+}
+
+.second_groepen {
+    display: grid;
+    margin: 10px 20px 0px 20px;
+}
+
+.second_card {
+    height: 80px;
+    width: 100%;
+    background-color: #051a0f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.second_card h3 {
+    color: var(--main-text);
+    font-size: 30px;
+    margin: 0 0 0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 140px);
+}
+
+.second_card img {
+    height: 50px;
+    margin: 5px 15px 0 0;
+    background-color: var(--third-text);
+    border-radius: 10px;
+    padding: 10px;
+}

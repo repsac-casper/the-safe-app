@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-background: #11271C;
+    --main-text: #F9F9F9;
+    --second-text: #CCDBDC;
+    --main-btn: #69365D;
+    --main-hover: #06889a;
+}
+
+body {
+    background-color: var(--main-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*first section*/
+.first_container {
+    display: flex;
+    justify-content: center;
+}
+
+.first_content h1 {
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 6rem;
+    color: var(--main-text);
+    background-image: linear-gradient(to top, #06889a 0%, #69365D 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.first_content p {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--second-text);
+}
+
+.first_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.first_content button {
+    background-color: var(--main-btn);
+    transition: all 0.2s ease-in-out;
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 130px;
+    margin-top: 50px;
+}
+
+#first_btn_text {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--main-text);
+    font-size: 1.5rem;
+}
+
+.first_content button:hover {
+    background-color: var(--main-hover);
+    transition: all 0.2s ease-in-out;
+}
+
+/*second section*/
+.second_container {
+    display: flex;
+    margin-top: 15vh;
+}
+
+.second_content h1 {
+    margin: 0 20px;
+    color: var(--main-text);
+    background-image: linear-gradient(to left, #06889a 0%, #69365D 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.second_content p {
+    margin: 0 20px;
+    color: var(--second-text);
+}
+
+/*third section*/
+.third_container {
+    display: flex;
+    margin-top: 15vh;
+    background-image: url(images/index/gold_line.svg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-x: -5px;
+    background-position-y: 40px;
+}
+
+.third_content {
+    margin: 0 20px;
+}
+
+.third_content h1 {
+    color: var(--main-text);
+    background-image: linear-gradient(to left, #06889a 0%, #69365D 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.third_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.third_card {
+    background-color: #031f11;
+    border-color: #22573c;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 10px 10px 10px #041d10;
+    width: 300px;
+    height: 425px;
+    border-radius: 20px;
+    color: var(--main-text);
+    margin: 10px;
+}
+
+.third_card img {
+    margin: 25px 25px 0 25px;
+    width: 250px;
+    border-radius: 18px 18px 5px 5px;
+}
+
+.third_card h2 {
+    margin: 0 25px;
+    color: var(--main-text);
+    background-image: linear-gradient(to left, #06889a 0%, #69365D 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.third_card p {
+    margin: 0 25px;
+    color: var(--main-text);
+}
