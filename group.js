@@ -63,3 +63,16 @@ getDoc(groupDocRef)
   .catch((error) => {
     console.error('Error getting group document:', error);
   });
+
+const share = document.getElementById('share');
+share.addEventListener('click',function(event){
+  event.preventDefault()
+
+  navigator.share({
+    title: selectedGroupName + ' delen.',
+    text: "Je bent uitgenodigd voor " + selectedGroupName + "! Klik op de onderstaande link om deel te nemen.",
+    url: 'https://betalen.thesafe.nl/uitnodiging/' + groupId,
+  })
+  .then(() => console.log('Shared successfully'))
+  .catch((error) => console.error('Sharing failed:', error));
+});

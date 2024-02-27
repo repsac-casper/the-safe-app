@@ -65,3 +65,42 @@ body {
     color: var(--third-text);
     font-size: 7vw;
 }
+
+/*stortbar section*/
+.stortbar {
+    background-color: transparent;
+    height: 12vw;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.stortbar_container {
+    display: flex;
+    justify-content: left;
+    margin: 0px 0px 0px 2vw;
+}
+
+#share {
+    width: 10vw;
+    aspect-ratio: 1;
+    margin-right: 2vw;
+    border-radius: 100%;
+    border: none;
+    background-color: #246444;
+}
+
+#share img {
+    height: 5vw;
+    margin-left: 1vw;
+    margin-top: 0.5vw;
+}
+
+#stort {
+    width: 84vw;
+    border-radius: 10vw;
+    border: none;
+    background-image: linear-gradient(to bottom, #69365D 0%, #9b578b 100%);
+    color: var(--main-text);
+    font-size: 3.5vw;
+}
