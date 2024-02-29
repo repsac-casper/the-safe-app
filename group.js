@@ -75,4 +75,11 @@ share.addEventListener('click',function(event){
   })
   .then(() => console.log('Shared successfully'))
   .catch((error) => console.error('Sharing failed:', error));
+  alert("Er is iets mis gegaan met delen, error: " + error)
+});
+
+const geld = document.getElementById('stort');
+geld.addEventListener('click',function(event){
+  event.preventDefault()
+  window.location.href = 'geld.html';
 });
