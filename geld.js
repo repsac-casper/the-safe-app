@@ -8,7 +8,7 @@
      * them to Checkout.
      */
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1Ot7VmHQSNvOpQERifodpXXv', quantity: 1, currency: 'EUR'}],
+      lineItems: [{price: 'price_1Ot7VmHQSNvOpQERifodpXXv', quantity: 1}],
       mode: 'payment',
       successUrl: 'https://repsac-casper.github.io/the-safe-app/geld.html',
       cancelUrl: 'https://repsac-casper.github.io/the-safe-app/geld.html',
