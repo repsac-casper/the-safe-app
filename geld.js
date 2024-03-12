@@ -10,7 +10,6 @@
     stripe.redirectToCheckout({
       lineItems: [{price: 'price_1Ot7VmHQSNvOpQERifodpXXv', quantity: 1}],
       mode: 'payment',
-      payment_method_types: ['card', 'ideal'],
       successUrl: 'https://repsac-casper.github.io/the-safe-app/geld.html',
       cancelUrl: 'https://repsac-casper.github.io/the-safe-app/geld.html',
     })
