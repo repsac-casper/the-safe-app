@@ -18,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <script type="module" src="geld.js"></script>
+    <script src="https://js.stripe.com/v3"></script>
+    <script src="geld.js" type="module"></script>
 </head>
 <body>
     <!--Navbar section-->
@@ -32,12 +33,15 @@
     <!--first section-->
     <div class="first_container">
         <div class="first_content">
-            <form action="/create-checkout-session" method="POST">
-                <input type="number" placeholder="Bedrag" required id="bedrag" min="1" oninput="this.value = Math.max(0, this.value)">
-                <p>Dit is hoeveel geld je wilt overmaken. Minimaal €1.00</p>
-                <button type="submit" id="checkout-button">Overmaken</button>
+            <form action="" id="payment-form">
+                <div>
+                    <input type="number" step="0.10" name="amount-input">
+                </div>
+                <button id="submit" role="link" type="button">Overmaken</button>
             </form>
         </div>
     </div>
+
+    <div class="error" id="error-message"></div>
 </body>
 </html>
